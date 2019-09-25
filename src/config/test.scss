@@ -1,0 +1,35 @@
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+}
+
+.test {
+   &--test2 {
+     display: none;
+   }
+}
+
+@-webkit-keyframes rotation {
+from {
+    -webkit-transform: rotateY(0deg);
+}
+to {
+    -webkit-transform: rotateY(179deg);
+}
+}
+
+.loading {
+-webkit-animation: rotation 1s 1 linear;
+}
